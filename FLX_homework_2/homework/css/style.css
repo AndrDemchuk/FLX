@@ -1,0 +1,150 @@
+@media print {
+
+	.tm-main-nav,
+	section ~ section,
+	#about,
+	section::before {
+		display: none;
+	}
+
+	.tm-banner {
+		border: none !important;
+		width: 470px;
+		height: 180px;
+		margin-left: 100px;
+		margin-top: 25px;
+
+	}
+
+	.tm-team-description-container {
+		right: -90px;
+		margin-top: -150px;
+	}
+
+	h2.tm-section-title {
+		color: #4a50ca;
+	}
+
+	.flex-item img {
+		position: relative;
+		top: 190px;
+		left: 60px;
+		height: 165px;
+	}
+}
+
+
+.blocks,
+.tm-sidebar,
+.tm-content-box {
+	box-shadow: 0px 0px 8px grey;
+}
+
+.box-bg h2:hover {
+	color: white;
+	background-color: #87CEFA;
+}
+
+.tm-banner {
+	border: 30px solid #F5F5F5;
+	padding: 0px;
+}
+
+ol li a {
+	color: black;
+}
+
+ol li a:hover {
+	color: #87CEFA;
+	text-decoration-style: double;
+}
+
+ol li a:visited {}
+
+ol li a.text:after {
+	content: "New";
+	vertical-align: super;
+	color: red;
+	font-size: x-small;
+}
+
+.btn-primary {
+	float: right;
+	height: 55px;
+	width: 162px;
+	color: lightblue;
+	background-color: #ffffff;
+	border-color: lightblue;
+	border-radius: 0px;
+	font-size: 20px;
+}
+
+.btn-primary:hover {
+	background-color: #9fd8fb;
+	color: #e2eefc;
+	border-color: lightblue;
+}
+
+.mandatory-field:after {
+	content: "*";
+	text-shadow: 0 1px 0 red;
+	color: rgb(255, 0, 0);
+}
+
+.tm-nav-item-link:hover {
+	background-color: #f5f5f5;
+}
+
+section::before {
+	content: " ";
+	height: 0px;
+	width: 0px;
+	border-left: 0px solid transparent;
+	border-right: 270px solid transparent;
+	border-top: 38px solid #87cefa;
+}
+
+.carousel-inner h2 {
+	color: gainsboro;
+	letter-spacing: 5px;
+}
+
+h2 + p {
+	font-style: italic;
+	line-height: 29px;
+}
+
+p:first-letter {
+	padding-left: 19px;
+	color: lightskyblue;
+	font-size: 30px;
+}
+
+.tm-content-box .tm-team-description-container {
+	max-width: 354px;
+	position: relative;
+	top: 124px;
+}
+
+div .flex-item img {
+	margin-top: -541px;
+	margin-left: 360px;
+	;
+}
+
+.box {
+	padding: 11px;
+}
+
+.box div p:first-letter {
+	padding-left: 0px;
+	color: black;
+}
+
+
+
+.boxes li:nth-of-type(2),
+.boxes li:nth-of-type(4),
+.boxes li:nth-of-type(6) {
+	background-color: #f5f5f5;
+}

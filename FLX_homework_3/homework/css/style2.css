@@ -1,0 +1,172 @@
+body {
+	background: #e6e6e6;
+	font: normal 18px/26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+body header {
+	background-image: url(../img/header_background_v2.jpg);
+	width: 100vw;
+	height: 183vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	color: #ff6666;
+	text-transform: uppercase;
+}
+body header .logo {
+	display: inline;
+}
+body header .logo img {
+	height: auto;
+	max-width: 17%;
+}
+body header nav {
+	float: right;
+	margin: 10px 29px 0px 0px;
+}
+body header nav a {
+	border-left: 2px solid #cccccc;
+	color: #ff6666;
+	padding: 13px 95px 19px 95px;
+	text-decoration: none;
+}
+body header nav a:first-child {
+	border-left: none;
+}
+body header section {
+	text-align: center;
+	margin-top: 300px;
+}
+body header section a {
+	text-decoration: none;
+	color: white;
+	background-color: #0401ac;
+	width: 0px;
+	padding: 13px 61px;
+}
+body header section a:hover {
+	background-color: #0501c5;
+}
+body main {
+	margin: 14px auto;
+	width: 970px;
+}
+body main .toolbar {
+	height: 40px;
+}
+body main .toolbar input {
+	width: 211px;
+	height: 22px;
+	margin-right: 7px;
+	padding: 8px;
+	float: right;
+	border: 2px solid #cccccc;
+	background-color: #e6e6e6;
+}
+body main #list h1 {
+	text-align: right;
+	text-transform: uppercase;
+	margin: 27px 0px 3px 0px;
+	color: #737373;
+}
+body main #list article {
+	display: flex;
+	height: 301px;
+	margin-bottom: 23px;
+	background: white;
+}
+body main #list article .post-description {
+	margin-top: 18px;
+	color: #a6a6a6;
+}
+body main #list article .post h3 {
+	margin-top: 2px;
+	height: 15px;
+	text-transform: uppercase;
+	color: #488b98;
+}
+body main #list article .post h3:before {
+	content: '';
+	position: absolute;
+	background-color: black;
+	width: 680px;
+	height: 1px;
+}
+body main #list article .post p {
+	color: #737373;
+}
+body main #list article .btn {
+	cursor: pointer;
+	border: none;
+	width: 209px;
+	height: 39px;
+	margin: -6px 25px 0px 0;
+	background-color: #0401ac;
+	color: white;
+	text-transform: uppercase;
+	float: right;
+}
+body main #list article .btn:hover {
+	background-color: #0501c5;
+}
+body main #list article img {
+	padding: 16px;
+	height: 250px;
+}
+body main #about h1 {
+	color: #737373;
+	padding-top: 26px;
+	margin: 0px 0px -6px 824px;
+	text-transform: uppercase;
+}
+body main #about p {
+	color: #737373;
+}
+body main #about img {
+	width: 965px;
+}
+body main .contact-form {
+	text-align: right;
+}
+body main .contact-form h1 {
+	color: #737373;
+}
+body main .contact-form h4 {
+	text-transform: uppercase;
+	margin-top: -15px;
+	color: #737373;
+}
+body main .contact-form .inputs {
+	color: #488b98;
+	display: inline-flex;
+}
+body main .contact-form .inputs input {
+	border: 1px solid #cccccc;
+	background-color: #e6e6e6;
+	height: 32px;
+	width: 475px;
+}
+body main .contact-form .text-field {
+	margin-top: 19px;
+	color: #488b98;
+}
+body main .contact-form .text-field textarea {
+	background-color: #e6e6e6;
+	border: 1px solid #cccccc;
+	width: 100%;
+}
+body main .contact-form .btn-sbm {
+	cursor: pointer;
+	border: none;
+	width: 209px;
+	height: 39px;
+	margin: 13px -6px 0px 0;
+	background-color: #0401ac;
+	color: white;
+	text-transform: uppercase;
+}
+body main .contact-form .btn-sbm:hover {
+	background-color: #0501c5;
+}
+body footer {
+	color: #737373;
+}

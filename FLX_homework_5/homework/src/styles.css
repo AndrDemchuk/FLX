@@ -1,0 +1,468 @@
+body {
+	background-color: #0b192f;
+	padding: 0;
+	font-weight: lighter;
+	margin: 0;
+	font-family: roboto;
+	color: white;
+}
+
+.btn {
+	color: #fff;
+	border: none;
+	font-size: 4vw;
+	background-color: #162b4d;
+	padding: 3vw;
+}
+
+header {
+	background-color: #162b4d;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap-reverse;
+}
+
+.logo a {
+	color: white;
+	text-decoration: none;
+	font-size: 35px;
+	margin-left: 1.5vw;
+}
+
+.blog {
+	color: #ec196d;
+}
+
+.nav-top li a {
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 36px 19px;
+	display: block;
+}
+
+.link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-top li a:hover {
+	background: #273e62;
+}
+
+.nav-top {
+	margin-right: 4vw;
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 4vw 0 0;
+}
+
+main {
+	justify-content: space-between;
+	display: flex;
+	flex-flow: row wrap;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 1.5%;
+
+}
+
+.main-arts-wrapper {
+	width: 72%;
+}
+
+.aside-wrapper {
+	color: #353243;
+	display: flex;
+	flex-flow: column wrap;
+	width: 26%;
+}
+
+.art {
+	display: flex;
+}
+
+.art-image {
+	width: 50%;
+}
+
+.art-image img {
+	width: 100%;
+	height: 100%;
+}
+
+.art-description {
+	display: flex;
+	flex-direction: column;
+	flex-flow: column nowrap;
+	width: 40%;
+}
+
+.art-description p {
+	filter: opacity(0.78);
+	padding: 0 8% 0 8%;
+	font-size: 1.2vw;
+	margin: 0;
+}
+
+.art-description h1 {
+	font-weight: 200;
+	font-size: 3vw;
+	padding: 0 11% 0 7%;
+	line-height: 2.8vw;
+}
+
+.date {
+	filter: opacity(40%);
+	width: 10%;
+	text-align: center;
+	font-size: 2vw;
+	padding: 1.5% 0;
+}
+
+.device-menu {
+	display: none;
+}
+
+.date span {
+	font-size: 3.3vw;
+}
+
+.main-arts-wrapper:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.art:nth-child(even) {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+
+.art:nth-child(even) .art-description h1 {
+	padding: 0 7% 0 15%;
+
+}
+
+.art:nth-child(odd) {
+	text-align: left;
+}
+
+.art:nth-child(1) {
+	background: #B71757;
+}
+
+.art:nth-child(2) {
+	background-color: #0D7E71;
+}
+
+.art:nth-child(3) {
+	background: #b1660e;
+}
+
+.art:nth-child(4) {
+	background: #d12767;
+}
+
+.art:nth-last-child(1) {
+	background: #2d95bb;
+}
+
+.art:nth-last-child(1) .art-description {
+	width: 90%;
+	padding-bottom: 4%;
+}
+
+.art:nth-last-child(1) .art-description h1 {
+	margin-bottom: 3%;
+}
+
+.art:nth-last-child(1) p {
+	padding: 0 7% 0 7%;
+}
+
+.art-image:hover {
+	cursor: pointer;
+	filter: opacity(50%);
+}
+
+.art-description:hover {
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.aside-image {
+	margin-bottom: -8%;
+}
+
+.aside-image img {
+	max-width: 100%;
+}
+
+.aside-art-description {
+	padding: 0% 4% 7% 9%;
+	margin-bottom: 8%;
+	text-align: left;
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: #fff;
+}
+
+.aside-art-description h2 {
+	font-weight: 300;
+	font-size: 2.2vw;
+	margin: 16% 0 0 0;
+}
+
+.aside-art-description p {
+	margin: 0;
+	filter: opacity(0.9);
+	font-size: 1.1vw;
+	padding: 5% 10% 3% 0;
+}
+
+footer {
+	width: 80%;
+	background-color: #162b4d;
+	margin: 0 auto;
+}
+
+.footer-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 1.1vw;
+	text-align: left;
+	filter: opacity(0.4);
+	padding: 1% 3% 2% 3%;
+	margin-top: 2%;
+}
+
+@media screen and (max-width:768px) {
+	.menu-content {
+		border: 0.1vw solid;
+		position: absolute;
+		left: 41%;
+		visibility: hidden;
+		background: #d12763;
+		top: 20%;
+	}
+
+	.menu-content a {
+		padding: 1% 8%;
+		font-size: 5vw;
+		display: block;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.menu-content a:hover {
+		background: #0b192f;
+	}
+
+	.device-menu {
+		display: block;
+	}
+
+	.btn:hover + .menu-content {
+		visibility: visible;
+	}
+
+	.menu-content:hover {
+		visibility: visible;
+	}
+
+	.main-arts-wrapper {
+		width: 60.5%;
+	}
+
+	main {
+		padding-top: 2%;
+	}
+
+	.header-wrapper {
+		flex-direction: column-reverse;
+		min-height: 25vw;
+		justify-content: space-evenly;
+	}
+
+	.nav-top li a {
+		display: none;
+	}
+
+	.nav-top:before :hover {}
+
+	.logo a {
+		font-size: 5.5vw;
+	}
+
+	.art {
+		flex-direction: column;
+	}
+
+	.art-image {
+		width: 100%;
+	}
+
+	.art-description {
+		width: 100%;
+		text-align: left;
+		padding-top: 3%;
+	}
+
+	.art-description h1 {
+		margin: 0;
+		padding: 4% 0% 4% 9%;
+		font-size: 5vw;
+		line-height: 5vw;
+	}
+
+	.art-description p {
+		font-size: 2vw;
+		padding: 0 8% 0 9%;
+	}
+
+	.art:nth-last-child(1) p {
+		padding: 3% 0 0 10%;
+	}
+
+	.art:nth-last-child(1) .art-description h1 {
+		margin-bottom: 0;
+	}
+
+	.date {
+		padding: 10% 0 7% 0;
+		font-size: 3vw;
+		width: 100%;
+	}
+
+	.date span {
+		font-size: 5vw;
+	}
+
+	.aside-wrapper {
+		width: 37%;
+	}
+
+	.aside-art-description {
+		padding: 0% 4% 10% 9%;
+		margin-bottom: 7%;
+		text-align: left;
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: #fff;
+	}
+
+	.aside-art-description p {
+		font-size: 1.68vw;
+	}
+
+	.aside-art-description h2 {
+		font-size: 2.7vw;
+		font-weight: 300;
+		margin: 19% 0 0 0;
+	}
+
+	.art:nth-child(even) {
+		flex-direction: column;
+	}
+
+	.art:nth-child(even) .art-description h1 {
+		padding: 4% 7% 6% 9%;
+	}
+
+	.footer-wrapper {
+		padding: 3vw;
+		flex-direction: column;
+		text-align: center;
+		font-size: 1.6vw;
+		line-height: 2.2vw;
+	}
+
+	.footer-wrapper p {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width:480px) {
+	.menu-content {
+		top: 30%;
+	}
+
+	.menu-content a {
+		font-size: 6vw;
+	}
+
+	main {
+		flex-direction: column;
+		margin-top: 1.5vw;
+	}
+
+	.header-wrapper {
+		flex-direction: column-reverse;
+		min-height: 33vw;
+		justify-content: space-evenly;
+	}
+
+	.main-arts-wrapper {
+		width: 100%;
+	}
+
+	.aside-wrapper {
+		width: 100%;
+	}
+
+	.art-description h1 {
+		font-size: 8vw;
+		line-height: 8vw;
+		padding-right: 7%;
+	}
+
+	.art-description p {
+		font-size: 3.5vw;
+		padding-top: 1vw;
+	}
+
+	.date {
+		font-size: 5vw;
+	}
+
+	.date span {
+		font-size: 10vw;
+	}
+
+	.art:nth-child(even) .art-description h1 {
+		padding: 3% 14% 5% 9%;
+	}
+
+	.art:nth-last-child(1) .art-description h1 {
+		padding-right: 5%;
+		padding-bottom: 3%;
+	}
+
+	.aside-art-description h2 {
+		font-size: 4.5vw;
+	}
+
+	.aside-art-description p {
+		font-size: 2.9vw;
+		padding-top: 4%;
+	}
+
+	.footer-wrapper p {
+		font-size: 2.4vw;
+		line-height: 4vw;
+	}
+
+	header,
+	main,
+	footer {
+		width: 90%;
+	}
+}
