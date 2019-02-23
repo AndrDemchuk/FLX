@@ -1,0 +1,111 @@
+/* Your styles goes here */
+#root {
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-weight: 300;
+	padding-bottom: 19.9px;
+	text-align: center;
+}
+
+#text_field {
+	height: 25px;
+	padding: 0.22vw 0.3vw;
+	margin: 0px 37px 30px 12px;
+	border: 0.99px solid #000;
+	width: 88vw;
+}
+
+.button_to_add {
+	right: -1.5%;
+	top: -6.89%;
+	position: absolute;
+}
+
+#list {
+	user-select: none;
+	list-style-type: none;
+}
+
+.material-icons {
+	cursor: pointer;
+	font-size: 44px;
+}
+
+.actions {
+	width: 95vw;
+	border-top: 1.98px solid #000;
+}
+
+li {
+	max-width: 92.4vw;
+	justify-content: space-between;
+	width: 92.4vw;
+	display: flex;
+	text-align: left;
+	align-items: center;
+	cursor: move;
+}
+
+.close {
+	align-self: flex-end;
+}
+
+.not_checked {
+	align-self: flex-start;
+}
+
+span {
+	display: inline-block;
+}
+
+.pop {
+	align-items: end;
+	display: flex;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.pop .poptext {
+	border-radius: 5px;
+	padding: 7px 0;
+	bottom: 107%;
+	left: 46%;
+	position: absolute;
+	z-index: 1;
+	margin-left: -79px;
+	color: #fff;
+	text-align: center;
+	visibility: hidden;
+	width: 249px;
+	background-color: #555;
+}
+
+.pop .poptext::after {
+	content: "";
+	border-width: 4px;
+	left: 49%;
+	border-color: #555454f7 transparent transparent transparent;
+	margin-left: -4px;
+	position: absolute;
+	top: 99%;
+	margin-left: -4px;
+	border-style: solid;
+}
+
+.pop .show {
+	animation: fadeIn 1.2s;
+	visibility: visible;
+}
+
+img {
+	top: 85%;
+	height: 74px;
+	position: absolute;
+	left: 49%;
+	width: 74px;
+}
