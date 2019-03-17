@@ -1,0 +1,95 @@
+@import "variables";
+
+h1,
+h3 {
+	color: @blue_colour;
+}
+
+.img-fluid {
+	width: 100%;
+}
+
+.navbar {
+	border-bottom: 1.2px solid lighten(@grey_colour, 37%);
+	padding: 0 0.9rem 0 0.9rem;
+}
+
+.active-navigation-item {
+	background-color: @blue_colour;
+}
+
+.related-item {
+	margin-bottom: 1.4rem;
+	cursor: pointer;
+
+	&.boxing {
+		background-color: @red_colour;
+		border: 1px solid @red_colour;
+	}
+
+	&.fitness {
+		background-color: @blue_colour;
+		border: 1px solid @blue_colour;
+	}
+
+	&.dance {
+		background-color: @orange_colour;
+		border: 1px solid @orange_colour;
+	}
+
+	&.bootcamp {
+		background-color: @green_colour;
+		border: 1px solid @green_colour;
+	}
+
+	.related-item-name {
+		width: 100%;
+		text-align: center;
+		padding: 0.45rem 0.45rem;
+
+		a {
+			color: @white_colour;
+		}
+	}
+}
+
+.container {
+	padding: 0;
+}
+
+.navigation-item {
+	&:hover {
+		.active-navigation-item();
+
+		.nav-link:hover {
+			color: @white_colour;
+		}
+	}
+
+	&.active {
+		.active-navigation-item();
+
+		& > .nav-link {
+			color: @white_colour  !important;
+		}
+	}
+
+	.nav-link {
+		padding: 0.7rem 0.9rem;
+	}
+}
+
+.foot {
+	background-color: @grey_colour;
+	color: @white_colour;
+	padding: 0.6rem;
+	margin-top: 1rem;
+}
+
+.navbar-toggler {
+	margin: 0.75rem 0.68rem;
+}
+
+hr {
+	background-color: lighten(@blue_colour, 28%);
+}
